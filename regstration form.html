@@ -1,0 +1,36 @@
+<html>
+<head><b><u><big> regstration form</head></big></u></b><br><br>
+<body>
+<script>
+function validateform()
+{
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+if (name==null || name=="")
+{
+alert("Name can't be blank");
+return false;
+}
+else if(password.length<6)
+{
+alert("password must be at least 6 character long.");
+return false;
+}
+}
+</script>
+<body>
+<form name="myform" method="post" action=http://www.javapoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()">
+
+Name:<input type="text"name="name"</br><br><br>
+Passward:<input type="Passward"name="Passward"</br><br><br>
+<input type="submit" value="register"><br><br>
+<b>Frist Name:</><input type="text"name="frist name"><br><br>
+<b>Last Name:</b><input type="text"name="Last Name"><br><br>
+<b>Country:</b><input type="text"name="Country"><br><br>
+<b>Email:</b><input type="text"name="Email"><br><br>
+<b>phone:</b><input type="text"name="phone"><br><br>
+<b>Passward:</b></b><input type="text"name="Passward"><br><br>
+<tr><td><input type="button"value="regster"></td></tr>
+</form>
+</body>
+</html>
